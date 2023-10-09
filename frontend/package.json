@@ -1,0 +1,28 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "frontend",
+  "scripts": {
+    "start": "",
+    "start:dev": "",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "pnpm exec prettier src/ --write",
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "3.0.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "npm run format"
+    ]
+  }
+}
