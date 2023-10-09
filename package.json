@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pnpm --stream -r start",
-    "start:dev": "pnpm --parallel --stream -r run start:dev",
+    "dev": "pnpm --parallel --stream -r run dev",
     "build": "pnpm --stream -r run build",
     "pre-commit": "pnpm run --filter backend --filter frontend pre-commit",
     "prepare": "husky install"
